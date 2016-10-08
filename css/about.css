@@ -1,0 +1,68 @@
+body {
+    font-family: "Microsoft YaHei";
+    margin-top: 5rem;
+    background: #FAFAFA
+}
+
+.side-left{
+    position: fixed;
+    text-align: center;
+    background-image: url(../images/me.jpg);
+    top: 0;
+    bottom: 0;
+    float: left;
+    border-right: 1px solid #f0f0f0;
+}
+
+.icon-bottom{
+    position: absolute;
+    left: 12rem;
+    bottom: 15rem;
+}
+
+.circle{
+    position: absolute;
+    text-align: center;
+    left: 5px;
+    bottom: 5px;
+    width: 140px;
+    /*line-height: 50px;*/
+    height: 140px;
+    border: 4px solid rgb(244, 67, 54);
+    border-radius: 50%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.icon-bottom:hover .circle{
+    opacity: 0.8;
+    visibility: visible;
+}
+
+.icon-bottom:hover img{
+    opacity: 0.5;
+    visibility: visible;
+}
+
+.bottom-name{
+    position: absolute;
+    color: #FAFAFA;
+    left: 12rem;
+    bottom: 5rem;
+}
+
+.top-name {
+    margin-top: 17px;
+    font-size: 21px;
+}
+
+.info {
+    margin-top: 17px;
+    font-size: 17px;
+}
+
+.male{
+    font-size: 30px;
+    color: rgb(244, 67, 54);
+    margin-top: 5px; 
+}
