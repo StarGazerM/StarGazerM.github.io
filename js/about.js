@@ -1,5 +1,5 @@
 
-var icon_vm = new Vue({
+var sidebar = new Vue({
     el: '#icon-bottom',
     data: {
         show: true,
@@ -10,3 +10,6 @@ var icon_vm = new Vue({
         }
     }
 });
+
+
+

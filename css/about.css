@@ -4,7 +4,7 @@ body {
     background: #FAFAFA
 }
 
-.side-left{
+.side-left {
     position: fixed;
     text-align: center;
     background-image: url(../images/me.jpg);
@@ -12,19 +12,19 @@ body {
     bottom: 0;
     float: left;
     border-right: 1px solid #f0f0f0;
+    visibility: visible;
 }
 
-.icon-bottom{
-    position: absolute;
-    left: 12rem;
-    bottom: 15rem;
+.icon-bottom {
+    position: relative;
+    top: 350px;
 }
 
-.circle{
-    position: absolute;
+.circle {
+    position: relative;
     text-align: center;
-    left: 5px;
-    bottom: 5px;
+    margin: 0 auto;
+    bottom: 145px;
     width: 140px;
     /*line-height: 50px;*/
     height: 140px;
@@ -34,35 +34,41 @@ body {
     visibility: hidden;
 }
 
-.icon-bottom:hover .circle{
+.icon-bottom:hover .circle {
     opacity: 0.8;
     visibility: visible;
 }
 
-.icon-bottom:hover img{
+.icon-bottom:hover img {
     opacity: 0.5;
     visibility: visible;
 }
 
-.bottom-name{
-    position: absolute;
+.bottom-name {
+    position: relative;
     color: #FAFAFA;
-    left: 12rem;
-    bottom: 5rem;
+    top: 250px;
 }
 
-.top-name {
+
+/*.top-name {
     margin-top: 17px;
     font-size: 21px;
-}
+} */
 
 .info {
     margin-top: 17px;
     font-size: 17px;
 }
 
-.male{
+.male {
     font-size: 30px;
     color: rgb(244, 67, 54);
-    margin-top: 5px; 
+    margin-top: 5px;
+}
+
+@media only screen and (max-with:768px) {
+    #sidebar {
+        width: 0
+    }
 }
