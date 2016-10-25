@@ -1,5 +1,5 @@
 var character = {
-    template: '<div><div class="row">\
+	template: '<div class="content"><div class="row">\
 					<div class="col-md-10">\
 						<p style="color: grey">CharactEr:</p>\
 					</div>\
@@ -18,7 +18,7 @@ var character = {
 
 
 var hobby = {
-    template: '<div><div class="row">\
+	template: '<div class="content"><div class="row">\
 					<div class="col-md-10">\
 						<p style="color: grey">HobbY:</p>\
 					</div>\
@@ -41,7 +41,7 @@ var hobby = {
 }
 
 var food = {
-    template: '<div><div class="row">\
+	template: '<div class="content"><div class="row">\
 					<div class="col-md-10">\
 						<p style="color: grey">FooD:</p>\
 					</div>\
@@ -53,19 +53,19 @@ var food = {
 						<p>Irish Stout</p>\
 					</div>\
 				</div></div>'
-} 
+}
 
 var routes = [
-	{path:'/', component: character},
-    {path:'/character', component: character},
-    {path: '/hobby', component: hobby},
-    {path: '/food', component: food}
+	{ path: '/', component: character },
+	{ path: '/character', component: character },
+	{ path: '/hobby', component: hobby },
+	{ path: '/food', component: food }
 ]
 
 var router = new VueRouter({
-    routes
+	routes
 })
 
 var app = new Vue({
-    router
+	router
 }).$mount('#app')

@@ -96,11 +96,13 @@ body {
 
 .dot:hover {
     -ms-transform: scale(1.4, 1.4);
-    /* IE 9 */
     -webkit-transform: scale(1.4, 1.4);
-    /* Safari */
     transform: scale(1.4, 1.4);
-    /* Standard syntax */
+}
+
+.content{
+    margin-top: 150px;
+    margin-bottom: 150px;
 }
 
 @media screen and (max-with:768px) {
