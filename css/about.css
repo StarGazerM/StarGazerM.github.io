@@ -100,7 +100,7 @@ body {
     transform: scale(1.4, 1.4);
 }
 
-.content{
+.content {
     margin-top: 150px;
     margin-bottom: 150px;
 }
@@ -115,4 +115,45 @@ body {
     .icon-bottom {
         display: none;
     }
+}
+
+p {
+    animation-name: leftEnter;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+    -webkit-animation-name: leftEnter;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-direction: alternate;
+}
+
+ul {
+    animation-name: leftEnter;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+    -webkit-animation-name: leftEnter;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-direction: alternate;
+}
+
+@keyframes leftEnter {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/*router*/
+.router-link-active .dot{
+    -ms-transform: scale(1.4, 1.4);
+    -webkit-transform: scale(1.4, 1.4);
+    transform: scale(1.4, 1.4);
+    background-color: rgb(96, 125, 139);
 }

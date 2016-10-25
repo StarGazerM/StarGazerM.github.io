@@ -69,6 +69,10 @@ a {
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
     animation-direction: alternate;
+    -webkit-animation-name: leftEnter;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-direction: alternate;
 }
 
 a:hover {
