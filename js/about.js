@@ -69,3 +69,55 @@ var router = new VueRouter({
 var app = new Vue({
 	router
 }).$mount('#app')
+
+
+var isFirefox = navigator.userAgent.indexOf("Firefox") != -1;
+var mousewheel = isFirefox ? "DOMMouseScroll" : "mousewheel";
+
+// var name = []
+var count = 1;
+
+var scrollFunc = function (e) {
+	e = e || window.event;
+
+	if (isFirefox) {
+		if (e.detail == -3) {
+			// 向上滚动  
+			count = count - 1;
+			if (count == 0) {
+				count = 3;
+			}
+			router.push(routes[count]);
+		} else {
+			// 向下滚动  
+			count = count + 1;
+			if(count == 4){
+				count = 1;
+			}
+			router.push(routes[count]);
+		}
+	} else {
+		if (e.wheelDelta == 120) {
+			// 向上滚动  
+			count = count - 1;
+			if (count == 0) {
+				count = 3;
+			}
+			router.push(routes[count]);
+		} else {
+			// 向下滚动  
+			count = count + 1;
+			if(count == 4){
+				count = 1;
+			}
+			router.push(routes[count]);
+		}
+	}
+}
+
+
+try {
+	document.addEventListener(mousewheel, scrollFunc, false);
+} catch (err) {
+	window.onmousewheel = document.onmousewheel = scrollFunc;
+}  
