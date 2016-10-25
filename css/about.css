@@ -105,7 +105,7 @@ body {
     margin-bottom: 150px;
 }
 
-@media screen and (max-with:768px) {
+@media screen and (max-with:1000px) {
     #sidebar {
         display: none;
     }
