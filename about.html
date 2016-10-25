@@ -11,24 +11,24 @@
 </head>
 
 <body>
-	<div class="row">
+	<div id="app" class="row">
 		<div id="sidebar" class="col-sm-4 side-left">
 
 			<div id="icon-bottom" class="icon-bottom">
 				<a href="http://stargazermiao.me">
-					<img src="./images/icon.jpg" class="img-circle" width="150px" height="150px" />
+					<img id="icon" src="./images/icon.jpg" class="img-circle" width="150px" height="150px" />
 					<div class="circle"></div>
 				</a>
 			</div>
 
 			<h2 class="bottom-name"><span style="color: rgb(244, 67, 54)">S</span>tar<span style="color: rgb(244, 67, 54)">G</span>azer</h2>
 		</div>
-		<div class="col-sm-7 col-sm-offset-5">
+		<div class="col-sm-7 col-sm-offset-4 side-right">
 			<div class="row">
 				<div class="col-sm-2">
 					<h3><span style="color: rgb(244, 67, 54)">N</span>am<span style="color: rgb(244, 67, 54)">E</span>:</h3>
 				</div>
-				<div class="col-sm-3 ">
+				<div class="col-sm-6 ">
 					<h3>孙逸豪 Yihao Sun</h3>
 				</div>
 				<div class="col-sm-1 male">
@@ -36,7 +36,9 @@
 				</div>
 			</div>
 			<hr/>
-			<div class="row">
+
+			<router-view></router-view>
+			<!--<div class="row">
 				<div class="col-md-10">
 					<p style="color: grey">CharactEr:</p>
 				</div>
@@ -86,12 +88,27 @@
 					<p>Interesting Local Food Every Where</p>
 					<p>Irish Stout</p>
 				</div>
+			</div>-->
+		</div>
+
+		<div class="col-sm-1">
+			<div class="row nav-dots">
+				<router-link to="/character">
+					<div class="dot"></div>
+				</router-link>
+				<router-link to="/hobby">
+					<div class="dot"></div>
+				</router-link>
+				<router-link to="/food">
+					<div class="dot"></div>
+				</router-link>
 			</div>
 		</div>
 	</div>
 
-	<!--<script src="js/vue.min.js"></script>
-    <script src="js/about.js"></script>-->
+    <script src="http://cdn.bootcss.com/vue/2.0.3/vue.min.js"></script>
+	<script src="http://cdn.bootcss.com/vue-router/2.0.1/vue-router.js"></script>
+	<script src="js/about.js"></script>
 
 </body>
 

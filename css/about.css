@@ -12,7 +12,10 @@ body {
     bottom: 0;
     float: left;
     border-right: 1px solid #f0f0f0;
-    visibility: visible;
+}
+
+.side-right {
+    padding-left: 10%;
 }
 
 .icon-bottom {
@@ -32,11 +35,18 @@ body {
     border-radius: 50%;
     opacity: 0;
     visibility: hidden;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
 }
 
 .icon-bottom:hover .circle {
     opacity: 0.8;
     visibility: visible;
+}
+
+#icon {
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
 }
 
 .icon-bottom:hover img {
@@ -67,8 +77,40 @@ body {
     margin-top: 5px;
 }
 
-@media only screen and (max-with:768px) {
+.dot {
+    margin: 20px;
+    text-align: center;
+    background-color: grey;
+    opacity: 0.5;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    /*margin-bottom: 15px;*/
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+}
+
+.nav-dots {
+    margin-top: 300px;
+}
+
+.dot:hover {
+    -ms-transform: scale(1.4, 1.4);
+    /* IE 9 */
+    -webkit-transform: scale(1.4, 1.4);
+    /* Safari */
+    transform: scale(1.4, 1.4);
+    /* Standard syntax */
+}
+
+@media screen and (max-with:768px) {
     #sidebar {
-        width: 0
+        display: none;
+    }
+    .bottom-name {
+        display: none;
+    }
+    .icon-bottom {
+        display: none;
     }
 }
