@@ -55,11 +55,23 @@ var food = {
 				</div></div>'
 }
 
+var footprint = {
+	template: '<div><div class="row">\
+					<div class="col-md-10">\
+						<p style="color: grey">FootprintT:</p>\
+					</div>\
+				</div>\
+				<div class="row">\
+						<iframe height=498 width=680 frameborder=0 src="http://www.qyer.com/u/user.php?action=sharemap&uid=5695963&isshare=1" allowfullscreen></iframe>\
+				</div></div>'
+};
+
 var routes = [
 	{ path: '/', component: character },
 	{ path: '/character', component: character },
 	{ path: '/hobby', component: hobby },
-	{ path: '/food', component: food }
+	{ path: '/food', component: food },
+	{ path: '/footprint', component:footprint},
 ]
 
 var router = new VueRouter({
@@ -85,13 +97,13 @@ var scrollFunc = function (e) {
 			// 向上滚动  
 			count = count - 1;
 			if (count == 0) {
-				count = 3;
+				count = 4;
 			}
 			router.push(routes[count]);
 		} else {
 			// 向下滚动  
 			count = count + 1;
-			if(count == 4){
+			if(count == 5){
 				count = 1;
 			}
 			router.push(routes[count]);
@@ -101,13 +113,13 @@ var scrollFunc = function (e) {
 			// 向上滚动  
 			count = count - 1;
 			if (count == 0) {
-				count = 3;
+				count = 4;
 			}
 			router.push(routes[count]);
 		} else {
 			// 向下滚动  
 			count = count + 1;
-			if(count == 4){
+			if(count == 5){
 				count = 1;
 			}
 			router.push(routes[count]);
