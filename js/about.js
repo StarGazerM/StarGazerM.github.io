@@ -32,7 +32,7 @@ var hobby = {
 						</ul>\
 						<p>Bass Guitar</p>\
 						<ul>\
-							<li>Musicman Stingray4 2Band EQ Maple BP</li>\
+							<li>Musicman Stingray4 2Band EQ</li>\
 							<li>Yamaha RBX6JM Lime Green</li>\
 						</ul>\
 						<p>Travel</p>\
