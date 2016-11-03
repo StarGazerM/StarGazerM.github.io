@@ -62,7 +62,9 @@ var footprint = {
 					</div>\
 				</div>\
 				<div class="row">\
-						<iframe height=498 width=680 frameborder=0 src="http://www.qyer.com/u/user.php?action=sharemap&uid=5695963&isshare=1" allowfullscreen></iframe>\
+				    <div class="col-sm-12">\
+						<iframe height=498 width=100% frameborder=0 src="http://www.qyer.com/u/user.php?action=sharemap&uid=5695963&isshare=1" allowfullscreen></iframe>\
+					</div>\
 				</div></div>'
 };
 

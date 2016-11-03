@@ -1,0 +1,10 @@
+
+.show{
+    visibility: visible;
+}
+
+@media only screen and (min-width: 50px) and (max-width: 767px)  {
+    .show{
+        visibility: hidden;
+    }
+}
