@@ -29,11 +29,13 @@ var hobby = {
 						<ul>\
 							<li>Python3</li>\
 							<li>Java</li>\
+							<li>Coq</li>\
 						</ul>\
 						<p>Bass Guitar</p>\
 						<ul>\
 							<li>Musicman Stingray4 2Band EQ</li>\
 							<li>Yamaha RBX6JM Lime Green</li>\
+						  	<li>Warmoth assembly bass</li>
 						</ul>\
 						<p>Travel</p>\
 					</div>\
@@ -63,7 +65,7 @@ var footprint = {
 				</div>\
 				<div class="row">\
 				    <div class="col-sm-12">\
-						<iframe height=498 width=100% frameborder=0 src="http://www.qyer.com/u/user.php?action=sharemap&uid=5695963&isshare=1" allowfullscreen></iframe>\
+						<iframe height=498 width=100% frameborder=0 src="https://www.qyer.com/u/user.php?action=sharemap&uid=5695963&isshare=1" allowfullscreen></iframe>\
 					</div>\
 				</div></div>'
 };
