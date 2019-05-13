@@ -9,9 +9,7 @@ var character = {
 						<p>喜欢学习</p>\
 						<p>有时候喜欢独处，有时候喜欢很多人</p>\
 						<p>曾经有很多朋友现在有很多朋友</p>\
-						<p>不喜欢被说暖.\
-							<del>但是其实有点暖？反正没有女朋友</del>\
-						</p>\
+						<p>不知不觉去了很多地方</p>\
 					</div>\
 				</div></div>'
 };
@@ -35,7 +33,7 @@ var hobby = {
 						<ul>\
 							<li>Musicman Stingray4 2Band EQ</li>\
 							<li>Yamaha RBX6JM Lime Green</li>\
-						  	<li>Warmoth assembly bass</li>
+						  	<li>Warmoth assembly bass</li>\
 						</ul>\
 						<p>Travel</p>\
 					</div>\
