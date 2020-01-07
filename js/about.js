@@ -37,7 +37,7 @@ var hobby = {
 							<li>Musicman Stingray4 2Band EQ</li>\
 							<li>Yamaha RBX6JM Lime Green</li>\
 						  	<li>Warmoth assembly bass</li>\
-                                                        <li>Yamaha BB5000AF</li>
+                                                        <li>Yamaha BB5000AF</li>\
 						</ul>\
 						<p>Travel</p>\
 					</div>\
