@@ -6,10 +6,11 @@ var character = {
 				</div>\
 				<div class="row">\
 					<div class="col-sm-10 col-sm-offset-2 info">\
-						<p>喜欢学习</p>\
-						<p>有时候喜欢独处，有时候喜欢很多人</p>\
-						<p>曾经有很多朋友现在有很多朋友</p>\
-						<p>不知不觉去了很多地方</p>\
+						<p>Love study</p>\
+						<p>prefer alone, but sometimes not</p>\
+						<p>use to have lots of friend, now have lots of too</p>\
+						<p>suddenly find myself have been to so many places in the world</p>\
+                                                <p>want to be the next 700 PhD</p>\
 					</div>\
 				</div></div>'
 };
@@ -25,15 +26,18 @@ var hobby = {
 					<div class="col-sm-10 col-sm-offset-2 info">\
 						<p>Coding</p>\
 						<ul>\
-							<li>Python3</li>\
 							<li>Java</li>\
+							<li>Racket</li>\
 							<li>Coq</li>\
+                                                        <li>Haskell</li>\
+                                                        <li>Python3</li>\
 						</ul>\
 						<p>Bass Guitar</p>\
 						<ul>\
 							<li>Musicman Stingray4 2Band EQ</li>\
 							<li>Yamaha RBX6JM Lime Green</li>\
 						  	<li>Warmoth assembly bass</li>\
+                                                        <li>Yamaha BB5000AF</li>
 						</ul>\
 						<p>Travel</p>\
 					</div>\
