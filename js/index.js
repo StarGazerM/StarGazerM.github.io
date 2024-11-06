@@ -3,8 +3,8 @@ var icon_vm = new Vue({
     el: '#mysvg',
     data: {
         name: "syh",
-        show: true,
-        showtext: false,
+        show: false,
+        showtext: true,
     },
     methods: {
         transfer: function () {

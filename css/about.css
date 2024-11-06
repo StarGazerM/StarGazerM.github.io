@@ -1,5 +1,5 @@
 body {
-    font-family: "Microsoft YaHei";
+    font-family: "'nalieta', sans-serif";
     margin-top: 5rem;
     background: #FAFAFA
 }
@@ -7,6 +7,7 @@ body {
 .side-left {
     position: fixed;
     text-align: center;
+    background-size: contain;
     background-image: url(../images/me.jpg);
     background-repeat: no-repeat;
     top: 0;
@@ -69,7 +70,8 @@ body {
 
 .info {
     margin-top: 17px;
-    font-size: 17px;
+    font-size: 25px;
+    font-family: 'nalieta', sans-serif;
 }
 
 .male {

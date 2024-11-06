@@ -3,7 +3,9 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>StarGazer| About Me</title>
+	<title>Yihao Sun| About Me</title>
+	<link href="https://fonts.cdnfonts.com/css/nalieta" rel="stylesheet">
+	<link href="https://fonts.cdnfonts.com/css/edu-vic-wa-nt-beginner" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.0/css/bootstrap.min.css">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/about.css">
@@ -13,28 +15,30 @@
 <body>
 	<div class="container-fluid">
 	<div id="app" class="row">
-		<div id="sidebar" class="col-sm-4 side-left">
+		<div id="sidebar" class="col-sm-3 side-left">
 
 			<div id="icon-bottom" class="icon-bottom">
 				<a href="http://stargazerm.github.io">
-					<img id="icon" src="./images/icon.jpg" class="img-circle" width="150px" height="150px" />
+					<img id="icon" src="./images/cat.jpg" class="img-circle" width="150px" height="150px" />
 					<div class="circle"></div>
 				</a>
 			</div>
 
-			<h2 class="bottom-name"><span style="color: rgb(244, 67, 54)">S</span>tar<span style="color: rgb(244, 67, 54)">G</span>azer</h2>
+			<h1 class="bottom-name" style="font-family: 'Edu VIC WA NT Beginner', Courier, monospace;">
+				<span style="color: rgb(244, 67, 54)">Y</span>ihao<span style="color: rgb(244, 67, 54)"> S</span>un
+			</h1>
 		</div>
-		<div class="col-sm-7 col-sm-offset-4 side-right">
+		<div class="col-sm-7 col-sm-offset-3 side-right">
 			<div class="row">
 				<div class="col-sm-2">
 					<h3><span style="color: rgb(244, 67, 54)">N</span>am<span style="color: rgb(244, 67, 54)">E</span>:</h3>
 				</div>
-				<div class="col-sm-6 " style="margin-left: 10px">
-					<h3>孙逸豪 Yihao Sun</h3>
+				<div class="col-sm-6 " style="margin-left: 10px; font-family: 'Edu VIC WA NT Beginner', Courier, monospace;">
+					<h3>Yihao Sun &nbsp; &nbsp; &nbsp; 孙逸豪 </h3>
 				</div>
-				<div class="col-sm-1 male">
+				<!-- <div class="col-sm-1 male">
 					<i class="fa fa-mars " aria-hidden="true"></i>
-				</div>
+				</div> -->
 			</div>
 			<hr/>
 			<router-view></router-view>
@@ -42,7 +46,19 @@
 
 		<div class="col-sm-1">
 			<div class="row nav-dots">
-				<router-link to="/character">
+				<router-link to="/edu">
+					<div class="dot"></div>
+				</router-link>
+				<router-link to="/skill">
+					<div class="dot"></div>
+				</router-link>
+				<router-link to="/project">
+					<div class="dot"></div>
+				</router-link>
+				<router-link to="/paper">
+					<div class="dot"></div>
+				</router-link>
+				<router-link to="/reading">
 					<div class="dot"></div>
 				</router-link>
 				<router-link to="/hobby">
