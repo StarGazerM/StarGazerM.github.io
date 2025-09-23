@@ -3,7 +3,6 @@ title: "Assemblage: Automatic Binary Dataset Construction for Machine Learning"
 collection: publications
 category: conferences
 permalink: /publication/nips24
-excerpt: 'This paper is about a famous math equation, $$E=mc^2$$'
 date: 2024-12-06
 venue: 'NeurIPS 2024 Datasets and Benchmarks Track'
 paperurl: 'https://arxiv.org/pdf/2405.03991'
