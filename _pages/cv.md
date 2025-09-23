@@ -11,35 +11,31 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D in Computer Science, Syracuse University, 2026 (expected)
+* M.S. in Computer Science, Syracuse University, 2020
+* B.S. in Electrical Engineering, Hangzhou Dianzi University, 2017
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* 2017 -- 2018: Technical support engineer
+  * Dahua Technology in  China/India
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* 2020 -- now: Research Assistant
+  * Syracuse University
+  <!-- * Duties included:  -->
+  <!-- * Supervisor: Professor Hub -->
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Summer 2025: Research Intern
+  * Bloomberg L.P, CTO Infrastructure and Security.
+  * Duties included: GPU accelerated SAT/SMT Solving.
+  <!-- * Supervisor: Professor Git -->
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Programming Languages: Rust, Racket, Haskell, C++/CUDA, Python, Java, etc.
+* HPC cluter experience : Theta, Polaris, etc.  
+* SAT/SMT Solving
+* Database : PostgreSQL, DuckDB, etc.
 
 Publications
 ======
@@ -47,18 +43,11 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
 Teaching
 ======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+* CIS 352 : Principle of programming Language Theory, Syracuse University, 2020
+* CIS 500 : Compiler Construction, Syracuse University, 2025
   
-Service and leadership
+Reviewer
 ======
-* Currently signed in to 43 different slack teams
+* The AAAI-25 Workshop on Artificial Intelligence for Cyber Security (AICS) , 2025, Philadelphia, USA
