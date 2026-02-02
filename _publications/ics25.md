@@ -1,4 +1,4 @@
--
+---
 title: "Multi-node multi-gpu datalog"
 collection: publications
 category: conferences
