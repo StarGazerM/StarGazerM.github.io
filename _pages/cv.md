@@ -33,7 +33,7 @@ Work experience
 Skills
 ======
 * Programming Languages: Rust, Racket, Haskell, C++/CUDA, Python, Java, etc.
-* HPC cluter experience : Theta, Polaris, etc.  
+* HPC cluster experience : Theta, Polaris, etc.  
 * SAT/SMT Solving
 * Database : PostgreSQL, DuckDB, etc.
 
@@ -47,6 +47,13 @@ Teaching
 ======
 * CIS 352 : Principle of programming Language Theory, Syracuse University, 2020
 * CIS 500 : Compiler Construction, Syracuse University, 2025
+
+Talk
+======
+* Oral presentation “Column Oriented GPU Datalog” at AAAI-25
+* Guest Lecture “Certified Programming” at WSU’s CPTS428 Software Security course, 2025 Fall
+* Invited talks “GPU accelerated SAT solver” at Bloomberg CTO office, 2025 Summer
+* NYC System Meetup 2027 Jan Talk: "Journey to GPU Datalog"
   
 Reviewer
 ======
