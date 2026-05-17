@@ -54,6 +54,7 @@ Talk
 * Guest Lecture “Certified Programming” at WSU’s CPTS428 Software Security course, 2025 Fall
 * Invited talks “GPU accelerated SAT solver” at Bloomberg CTO office, 2025 Summer
 * NYC System Meetup 2027 Jan Talk: "Journey to GPU Datalog"
+* Invited talk "Optimizing Datalog for GPU" at MIT PLR workshop, 2026 May
   
 Reviewer
 ======

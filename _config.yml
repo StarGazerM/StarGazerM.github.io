@@ -12,7 +12,7 @@ site_theme               : "default" # Currently available options are "default"
 title                    : "Yihao Sun Homepage"
 title_separator          : "-"
 name                     : &name "Yihao Sun"
-description              : &description "PhD candidate-Syracuse University | Database | Programming Language Theory | High Performance Computing | GPGPU"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Incoming Assistant Professor at Utah State University | Database | Programming Language Theory | High Performance Computing | GPGPU"   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://StarGazerM.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -25,12 +25,12 @@ author:
   # Biographic information
   avatar           : "profile.jpg"
   name             : "Yihao Sun"
-  pronouns         : # example: "she/her"  
-  bio              : "PhD candidate-Syracuse University | Database | Programming Language Theory | High Performance Computing | GPGPU"
-  location         : "Syracuse, NY"
-  employer         : "Syracuse University"
+  pronouns         : "He/Him"
+  bio              : "Incoming Assistant Professor at Utah State University | Database | Programming Language Theory | High Performance Computing | GPGPU"
+  location         : "Logan, UT"
+  employer         : "Utah State University"
   uri              : # URL
-  email            : "ysun67@syr.edu" 
+  email            : "stargazermiao@gmail.com" 
 
   # Academic websites
   academia         : # URL
