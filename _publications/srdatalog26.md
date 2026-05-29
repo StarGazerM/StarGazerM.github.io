@@ -5,7 +5,7 @@ category: conferences
 permalink: /publication/srdatalog26
 date: 2026-05-05
 venue: 'Submmitted to related top-tier conferences'
-paperurl: 'https://arxiv.org/pdf/2605.10511'
+paperurl: 'https://arxiv.org/abs/2604.20073'
 citation: 'Y. Sun, K. Qi, G. Thomas, M. Kristopher, and K. Sidharth, “Scaling Worst-Case Optimal Datalog to GPUs,” in
 Arxiv preprint, 2026.'
 ---
