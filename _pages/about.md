@@ -21,8 +21,7 @@ My opinion on various different programming languages:
 
 -----------------
 
-I am recruiting two self-motivated PhD students to start in Fall 2026 or Spring 2027, working in logic programming, neuro-symbolic reasoning, high-performance programming languages, and database systems.
-> Note: I am still finalizing my onboarding at USU. Formal application details (deadline, program link, funding specifics) will be posted here once available. In the meantime, I'd like to start the conversation early---if you're considering applying, please reach out and let's stay in touch.
+I am recruiting two self-motivated PhD students to start in 2027 Spring/Fall, working in logic programming, neuro-symbolic reasoning, high-performance programming languages, and database systems.
 
 Concrete directions an incoming student might take on:
 - Further exploring Datalog and its semantic extensions to GPU and distributed systems
@@ -32,5 +31,5 @@ Concrete directions an incoming student might take on:
 
 I am especially interested in students who enjoy thinking across the PL/systems boundary. As a new generation of PL/systems researchers, I believe our mission is not just to do "PL + X" research but "PL in X": taking everything we have learned from traditional programming language theory and going deep into each target domain, building systems and publishing work that the target community itself recognizes as a top-tier contribution. Useful background includes solid C++ and/or Rust, exposure to compilers or database internals, and some experience with GPU programming (CUDA, Triton, MLIR, etc.). None of these are required individually, but genuine enthusiasm for working at the intersection is.
 
-If you share this vision and are interested in working with me, please email me your CV and a short note about what you'd like to work on, with the subject line "Prospective PhD — [Your Name]".
+If you share this vision and are interested in working with me, please email me your **CV,transcript** and a short note about what you'd like to work on (if you have any questions, please also include them in email), with the subject line "Prospective PhD — [Your Name]".
 A brief note on USU: Logan is a small but vibrant city about 80 miles from Salt Lake City, with great outdoor access and a low cost of living.
