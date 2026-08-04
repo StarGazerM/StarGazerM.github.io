@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 
-I am an incoming assistant professor at Utah State University. I did my PhD in Computer Science at Syracuse University, advised by [Prof. Kristopher Micinski](https://kmicinski.com/). During my PhD, I also collaborated a lot with [Prof.Sidharth Kumar](https://sidharthkumar.io/) and [Prof. Thomas Gilray](https://thomas.gilray.org/). My research aims to lower the barrier to parallel computing in data-intensive domains by combining insights from modern programming languages and database theory.
+I am an assistant professor at Utah State University. I did my PhD in Computer Science at Syracuse University, advised by [Prof. Kristopher Micinski](https://kmicinski.com/). During my PhD, I also collaborated a lot with [Prof.Sidharth Kumar](https://sidharthkumar.io/) and [Prof. Thomas Gilray](https://thomas.gilray.org/). My research aims to lower the barrier to parallel computing in data-intensive domains by combining insights from modern programming languages and database theory.
 
 <!-- At the core of my work is Datalog, a declarative query language with deep roots in database systems that has recently gained renewed attention in programming languages and AI. Prior work has shown Datalog’s effectiveness in expressing a wide range of data-intensive applications while delivering both high performance and low code complexity. I argue that by extending both the semantics and the parallel hardware support of Datalog, we can move toward a general-purpose solution for data-intensive programming on parallel hardware, including GPUs and distributed systems. -->
 

@@ -11,16 +11,20 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Computer Science, Syracuse University, 2026 (expected)
+* Ph.D in Computer Science, Syracuse University, 2026
 * M.S. in Computer Science, Syracuse University, 2020
 * B.S. in Electrical Engineering, Hangzhou Dianzi University, 2017
 
 Work experience
 ======
-* 2017 -- 2018: Technical support engineer
-  * Dahua Technology in  China/India
 
-* 2020 -- now: Research Assistant
+
+* 2026 -- Present: Assistant Professor
+  * Utah State University
+  <!-- * Duties included:  -->
+  <!-- * Supervisor: Professor Hub -->
+
+* 2020 -- 2026: Research Assistant
   * Syracuse University
   <!-- * Duties included:  -->
   <!-- * Supervisor: Professor Hub -->
@@ -30,12 +34,9 @@ Work experience
   * Duties included: GPU accelerated SAT/SMT Solving.
   <!-- * Supervisor: Professor Git -->
   
-Skills
-======
-* Programming Languages: Rust, Racket, Haskell, C++/CUDA, Python, Java, etc.
-* HPC cluster experience : Theta, Polaris, etc.  
-* SAT/SMT Solving
-* Database : PostgreSQL, DuckDB, etc.
+* 2017 -- 2018: Technical support engineer
+  * Dahua Technology in  China/India
+
 
 Publications
 ======
