@@ -14,7 +14,7 @@ comments: false
 
 **Fall 2026 — Draft syllabus**
 
-> How does a short declarative query become an efficient executable program?
+> How does a short declarative logic reasoningquery become an efficient executable program?
 
 ## Course facts
 
@@ -90,7 +90,7 @@ midterm, or final exam.
 | 12 · Nov. 16–20 | Probabilistic and neuro-symbolic Datalog | Compare exact, top-k, and differentiable proof evaluation | Huang et al., [*Scallop*](https://proceedings.neurips.cc/paper/2021/hash/d367eef13f90793bd8121e2f675f0dc2-Abstract.html), §§2–4.2 |
 | 13 · Nov. 23–27 | Thanksgiving break | No class | **No reading or work due** |
 | 14 · Nov. 30–Dec. 4 | Project clinic | Correctness, work counters, baselines, and failure cases | No reading; **R3 due** |
-| 15 · Dec. 7–11 | Synthesis | Project presentations and connections across the course | No reading; **No-Test Week** |
+| 15 · Dec. 7–11 | Synthesis | Short project presentations (can be zoom) and connections across the course | No reading; **No-Test Week** |
 
 Week 13 is a full course break. Week 15 has no quiz or examination; project
 presentations are the only graded activity, as permitted by the university's
@@ -139,22 +139,17 @@ unless the starter code supplies general delta-rule generation.
 Each release consists of code, tests, and one-command benchmark output—no
 proposal or long report. Correctness tests and algorithm-specific counters,
 not raw speed, determine the stage score. DuckDB is a diagnostic baseline; the
-goal is to explain differences, not beat it. There is no leaderboard and no
-novelty requirement. An optional extension may support the presentation but
-cannot replace a required stage.
+goal is to explain differences, not beat it.
 
 After R1 and R2, staff will release compatible reference checkpoints. Students
-may use them for later stages without losing later-stage points. Code is graded
-as a team; presentation and questions are graded individually. Pair
-submissions include a short contribution statement.
+may use them for later stages without losing later-stage points.
 
 ### Discussion and participation — 20 points
 
 Each student leads one reading discussion: accurate central claim (4), useful
 connection or counterexample (3), and questions that advance discussion (3).
 The remaining 10 points reflect prepared contributions to reading discussions,
-derivations, and result clinics. Attendance alone does not earn participation
-credit.
+derivations, and result clinics. 
 
 ## Project tools and AI policy
 
