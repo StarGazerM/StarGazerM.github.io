@@ -158,7 +158,15 @@ credit.
 
 ## Project tools and AI policy
 
-Staff supplies the frontend, storage, reference semantics, test harness, and
+The project uses Rust with a procedural-macro CQ frontend. Staff supplies and
+documents the macro parser, all intermediate representations (IRs), the
+expansion pipeline, and the crate structure. Students do not need to understand
+multi-stage metaprogramming or design procedural macros; the required work is
+ordinary Rust programming inside the supplied interfaces. When a stage emits
+Rust code, students use the `quote!` macro from the `quote` crate with provided
+examples. This is the only proc-macro-specific technique required.
+
+Staff also supplies storage, reference semantics, the test harness, and
 benchmark infrastructure. Students implement only the named execution stages;
 they do not build SQL parsing, transactions, a storage manager, a cost-based
 optimizer, or a parallel runtime.
