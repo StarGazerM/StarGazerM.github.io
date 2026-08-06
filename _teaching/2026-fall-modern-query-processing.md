@@ -14,7 +14,7 @@ comments: false
 
 **Fall 2026 — Draft syllabus**
 
-> How does a short declarative logic reasoningquery become an efficient executable program?
+> How does a short declarative reasoning query become an efficient executable program?
 
 ## Course facts
 
@@ -35,10 +35,11 @@ dates are marked below.
 
 This course follows conjunctive queries (CQs) from logical rules to executable
 code. We study binary joins, execution control, join ordering, output-size
-bounds, semijoin reduction, and worst-case-optimal joins. We then treat
-positive Datalog as recursive CQ evaluation and study fixed points and
-semi-naive execution. Graph, ontology-style, probabilistic, and neuro-symbolic
-reasoning provide recurring examples.
+bounds, semijoin reduction, and worst-case-optimal joins. An early Rust bridge
+introduces the language and the staged macro pipeline used by the course
+project. We then treat positive Datalog as recursive CQ evaluation and study
+fixed points and semi-naive execution. Graph, ontology-style, probabilistic,
+and neuro-symbolic reasoning provide recurring examples.
 
 The course is one focused path through semantics, algorithms, and systems—not
 a survey of SQL, storage, transactions, or every form of logic. All
@@ -48,7 +49,8 @@ CQ.
 By the end of the course, students should be able to:
 
 1. explain CQ and positive Datalog semantics;
-2. move among rules, hypergraphs, plans, and executable operators;
+2. move among rules, hypergraphs, typed intermediate representations, plans,
+   and executable operators;
 3. trace binary, semijoin, trie-based, and semi-naive evaluation;
 4. use query shape, cardinality, and AGM bounds to choose an algorithm; and
 5. test an implementation claim with correctness checks and interpretable work
@@ -57,8 +59,10 @@ By the end of the course, students should be able to:
 ### Prerequisites
 
 Students should know undergraduate algorithms and data structures, be
-comfortable with mathematical notation, and program in a systems language.
-Prior database coursework is helpful but not required.
+comfortable with mathematical notation, and be able to program in at least one
+language. Prior Rust experience is not required: Week 3 introduces the subset
+of Rust and metaprogramming used in the project. Prior database coursework is
+helpful but not required.
 
 ## Course format
 
@@ -78,15 +82,15 @@ midterm, or final exam.
 |---|---|---|---|
 | 1 · Aug. 31–Sep. 4 | CQ meaning | Rules, valuations, and query hypergraphs | Abiteboul, Hull, and Vianu, [*Foundations of Databases*](https://webdam.di.ens.fr/Alice/), §§3.1–3.3, 4.1–4.2 |
 | 2 · Sep. 7–11 | Binary joins | Nested-loop and hash join; build/probe state | Garcia-Molina, Ullman, and Widom, [*Database System Implementation*](https://i.stanford.edu/~ullman/dbsi.html), selected §§6.2–6.4; **Labor Day adjustment** |
-| 3 · Sep. 14–18 | Pull and push | Run the same fixed plan under both control models | Neumann, [*Efficiently Compiling Efficient Query Plans for Modern Hardware*](https://www.vldb.org/pvldb/vol4/p539-neumann.pdf), §§1, 3.1–3.2; **practicum 1** |
-| 4 · Sep. 21–25 | AGM bounds | Compute a fractional cover; compare bounds with measured work | Atserias, Grohe, and Marx, [*Size Bounds and Query Plans for Relational Joins*](https://arxiv.org/abs/1711.03860), §§2–3.1; **practicum 2; R1 due** |
-| 5 · Sep. 28–Oct. 2 | Yannakakis | Join trees, two semijoin passes, and enumeration | Yannakakis, [*Algorithms for Acyclic Database Schemes*](https://dblp.org/rec/conf/vldb/Yannakakis81), §§2, 4; **Fall Break adjustment** |
-| 6 · Oct. 5–9 | Practical join filtering | **Hangdong Zhao guest lecture:** predicate transfer and runtime filters | Yang et al., [*Predicate Transfer*](https://www.vldb.org/cidrdb/papers/2024/p22-yang.pdf) |
-| 7 · Oct. 12–16 | WCOJ principle | Contrast binary plans with variable-oriented Generic Join | Ngo, Porat, Ré, and Rudra, [*Worst-case Optimal Join Algorithms*](https://arxiv.org/abs/1203.1952), §§1–2 and §5 overview |
-| 8 · Oct. 19–23 | Leapfrog Triejoin | Trace trie cursors under supplied variable orders | Veldhuizen, [*Leapfrog Triejoin*](https://www.openproceedings.org/2014/conf/icdt/Veldhuizen14.pdf), §§1, 3.1–3.5; **practicum 3** |
-| 9 · Oct. 26–30 | Positive Datalog | Model, fixed-point, and proof views of recursion | *Foundations of Databases*, §§12.1–12.4; **R2 due** |
-| 10 · Nov. 9–13 | Semi-naive evaluation | Track full, delta, candidates, duplicates, and termination | *Foundations of Databases*, §13.1 |
-| 11 · Nov. 2–6 | Extending Datalog to ontology reasoning | Negation and disjunction |  [Ontology-Based Data Access: A Study through Disjunctive Datalog, CSP, and MMSNP](https://dl.acm.org/doi/abs/10.1145/2661643) |
+| 3 · Sep. 14–18 | Rust and staged query programs | Ownership and borrowing; enums and pattern matching; traits and iterators; trace a CQ through typed IRs to generated Rust | *The Rust Programming Language*: [Ch. 4](https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html), [Ch. 6](https://doc.rust-lang.org/book/ch06-00-enums.html), and [§20.5 overview](https://doc.rust-lang.org/book/ch20-05-macros.html) |
+| 4 · Sep. 21–25 | Pull and push | Run the same fixed plan under both control models | Neumann, [*Efficiently Compiling Efficient Query Plans for Modern Hardware*](https://www.vldb.org/pvldb/vol4/p539-neumann.pdf), §§1, 3.1–3.2; **practicum 1** |
+| 5 · Sep. 28–Oct. 2 | AGM bounds | Compute a fractional cover; compare bounds with measured work | Atserias, Grohe, and Marx, [*Size Bounds and Query Plans for Relational Joins*](https://arxiv.org/abs/1711.03860), §§2–3.1; **practicum 2; R1 due** |
+| 6 · Oct. 5–9 | Yannakakis | Join trees, two semijoin passes, and enumeration | Yannakakis, [*Algorithms for Acyclic Database Schemes*](https://dblp.org/rec/conf/vldb/Yannakakis81), §§2, 4; **Fall Break adjustment** |
+| 7 · Oct. 12–16 | Practical join filtering | **Hangdong Zhao guest lecture:** predicate transfer and runtime filters | Yang et al., [*Predicate Transfer*](https://www.vldb.org/cidrdb/papers/2024/p22-yang.pdf) |
+| 8 · Oct. 19–23 | Worst-case-optimal joins | Contrast binary and variable-at-a-time plans; trace Generic Join and Leapfrog Triejoin under a supplied variable order | Veldhuizen, [*Leapfrog Triejoin*](https://www.openproceedings.org/2014/conf/icdt/Veldhuizen14.pdf), §§1, 3.1–3.5; **practicum 3** |
+| 9 · Oct. 26–30 | Positive Datalog | Model, fixed-point, and proof views of recursion | *Foundations of Databases*, §§12.1–12.4 |
+| 10 · Nov. 2–6 | Semi-naive evaluation | Track full, delta, candidates, duplicates, and termination | *Foundations of Databases*, §13.1; **R2 due** |
+| 11 · Nov. 9–13 | Extending Datalog to ontology reasoning | Negation and disjunction | [Ontology-Based Data Access: A Study through Disjunctive Datalog, CSP, and MMSNP](https://dl.acm.org/doi/abs/10.1145/2661643) |
 | 12 · Nov. 16–20 | Probabilistic and neuro-symbolic Datalog | Compare exact, top-k, and differentiable proof evaluation | Huang et al., [*Scallop*](https://proceedings.neurips.cc/paper/2021/hash/d367eef13f90793bd8121e2f675f0dc2-Abstract.html), §§2–4.2 |
 | 13 · Nov. 23–27 | Thanksgiving break | No class | **No reading or work due** |
 | 14 · Nov. 30–Dec. 4 | Project clinic | Correctness, work counters, baselines, and failure cases | No reading; **R3 due** |
@@ -155,13 +159,14 @@ derivations, and result clinics.
 
 ## Project tools and AI policy
 
-The project uses Rust with a procedural-macro CQ frontend. Staff supplies and
-documents the macro parser, all intermediate representations (IRs), the
-expansion pipeline, and the crate structure. Students do not need to understand
-multi-stage metaprogramming or design procedural macros; the required work is
-ordinary Rust programming inside the supplied interfaces. When a stage emits
-Rust code, students use the `quote!` macro from the `quote` crate with provided
-examples. This is the only proc-macro-specific technique required.
+The project uses Rust with a procedural-macro CQ frontend. Week 3 teaches enough
+Rust and metaprogramming to read the pipeline from surface CQ through typed IRs
+to generated code. Staff supplies and documents the macro parser, initial IRs,
+expansion pipeline, and crate structure. Students inspect macro expansions and
+implement ordinary Rust transformations inside the supplied interfaces; they
+do not build a token parser or procedural-macro infrastructure from scratch.
+When a stage emits Rust code, students use the `quote!` macro from the `quote`
+crate with provided examples.
 
 Staff also supplies storage, reference semantics, the test harness, and
 benchmark infrastructure. Students implement only the named execution stages;
