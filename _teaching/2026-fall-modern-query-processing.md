@@ -23,6 +23,7 @@ comments: false
 | Dates | August 31–December 11, 2026 |
 | Level | Graduate; advanced undergraduates with permission |
 | Format | Lecture, paper discussion, and a cumulative implementation project |
+| Course notes | [Read online](https://pldi.me/modern-query-processing-notes/) · [GitHub source](https://github.com/StarGazerM/modern-query-processing-notes) |
 | Exams | None |
 | Office hours | TBD |
 | Meeting time, location, and course site | To be announced |
