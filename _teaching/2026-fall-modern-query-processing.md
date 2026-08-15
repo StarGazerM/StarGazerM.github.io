@@ -23,6 +23,7 @@ quick-reference page all share one navigation system and one source repository.
 
 [Enter the course website](https://pldi.me/modern-query-processing-notes/){: .btn .btn--primary }
 [Browse the source](https://github.com/StarGazerM/modern-query-processing-notes){: .btn .btn--inverse }
+[Homework repository](https://github.com/StarGazerM/modern-query-processing-homework){: .btn .btn--inverse }
 
 ## Course at a glance
 
@@ -34,6 +35,7 @@ quick-reference page all share one navigation system and one source repository.
 | Exams | None |
 | Language | Rust is introduced in the course; prior Rust experience is not required |
 | Through-line | CQ meaning → joins → bounds → execution → recursive Datalog |
+| Advanced work | Complete the common core, then pick one released extension |
 
 ## What the course follows
 
@@ -47,11 +49,18 @@ The second half treats positive Datalog as recursive conjunctive-query
 evaluation. Fixed points, deltas, duplicate elimination, and termination make
 the same semantic and physical questions recur over time.
 
+After the shared implementation core, each team completes one advanced
+extension. Teams rank their preferences, and with the expected class size below
+20 the instructor will balance assignments so groups investigate different
+language, execution, parallel, incremental, or index-sharing decisions when
+practical.
+
 ## Public course materials
 
 - [Syllabus](https://pldi.me/modern-query-processing-notes/syllabus.html) — outcomes, prerequisites, assessment, and policies
 - [Schedule](https://pldi.me/modern-query-processing-notes/schedule.html) — weekly topics, primary readings, practica, and releases
 - [Course project](https://pldi.me/modern-query-processing-notes/project.html) — the supplied Rust engine and required stages
+- [Homework repository](https://github.com/StarGazerM/modern-query-processing-homework) — stable `hw1`, `hw2`, `hw3`, and assigned `pick-one/*` starter branches
 - [Course notes](https://pldi.me/modern-query-processing-notes/#course-notes) — conversational chapters and quick-reference material
 
 Meeting details and institution-specific policies remain provisional until the
